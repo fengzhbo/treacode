@@ -1,0 +1,14 @@
+# A股量化交易配置文件
+
+data:
+  source: "tushare"  # 数据源：tushare, akshare, baostock
+  cache_dir: "data/raw"
+
+backtest:
+  initial_capital: 100000.0
+  commission_rate: 0.0003
+  slippage: 0.001
+
+logging:
+  level: "INFO"
+  file: "logs/quant.log"
